@@ -13,13 +13,14 @@ const SumCalculator = () => {
 
   return (
     <div>
+      <h1>Sum Calculator</h1>
       <input
         type="number"
         value={value}
         onChange={(e) => setValue(e.target.value)}
         placeholder="Enter a number"
       />
-      <h2>Sum: {sum}</h2>
+      <p>Sum: {sum}</p>
     </div>
   );
 };
