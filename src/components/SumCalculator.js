@@ -5,7 +5,10 @@ const SumCalculator = () => {
   const [sum, setSum] = useState(0);
 
  useEffect(() => {
-    setSum((prev) => prev + Number(value));
+    // setSum((prev) => prev + Number(value));
+    // or
+    setSum(Number(sum)+ Number(value));
+
   }, [value]);
 
   return (
@@ -16,7 +19,7 @@ const SumCalculator = () => {
         onChange={(e) => setValue(e.target.value)}
         placeholder="Enter a number"
       />
-      <h2>Total Sum: {sum}</h2>
+      <h2>Sum: {sum}</h2>
     </div>
   );
 };
